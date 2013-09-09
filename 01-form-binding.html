@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AngularJS</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="container" ng-app>
+    <h1>Demo: Form binding</h1>
+
+    <form role="form" ng-controller="MainCtrl" ng-submit="save()">
+      <div class="form-group">
+        <label for="firstName">First name</label>
+        <input ng-model="user.firstName" class="form-control" id="firstName" placeholder="Enter first name">
+      </div>
+      <div class="form-group">
+        <label for="emailAddress">Email address</label>
+        <input ng-model="user.emailAddress" type="email" class="form-control" id="emailAddress" placeholder="Email">
+      </div>
+      <button type="submit" class="btn btn-default">Debug in console</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="/vendor/angular/angular.js"></script>
+  <script type="text/javascript" src="/01-form-binding.js"></script>
+</body>
+</html>
