@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AngularJS</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="container" ng-app>
+    <h1>Demo: Data Promises</h1>
+
+    <h2>
+      What's your name? <input ng-model="first_name" type="text">
+    </h2>
+
+    <h2 ng-show="first_name">
+      Hello, {{first_name}}
+    </h2>
+
+  </div>
+
+  <script type="text/javascript" src="/vendor/angular/angular.js"></script>
+  <script type="text/javascript" src="/10-promise.js"></script>
+</body>
+</html>
